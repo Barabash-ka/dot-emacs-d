@@ -1,1 +1,6 @@
-init.org
+* Emacs configuration directory
+
+All the details are in the configuration [[init.org][file]].
+
+** TODO
+Find out how [[https://github.com/larstvei][larstvei]] achieves this linking in a much more elegant way.
