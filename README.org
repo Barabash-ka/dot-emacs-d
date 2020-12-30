@@ -1,19 +1,37 @@
-* Emacs configuration directory
+#+TITLE: Emacs configuration directory
+#+AUTHOR: Kathy Barabash
+#+LATEX_HEADER: \usepackage{parskip}
+#+LATEX_HEADER: \usepackage{inconsolata}
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
 
-Configuration and its documentation are in the configuration [[init.org][file]].
+Both the configuration and its documentation are in the configuration [[init.org][file]].
 
-** Usage
+* Usage
 
-- clone the repository into ~/.emacs.d (save old config)
-- cd ~/.emacs.d
-- hide current version of bootstrap.el and init.el from ovewriting (copy to
--hide)
-- run emacs and wait, first load will take long time (10 minutes)
-- restart emacs, this time it should take ~5 seconds
-- enjoy
+Clone the repository into ~/.emacs.d (after saving the existing config)
+#+BEGIN_SRC sh :tangle no
+  mv ~/.emacs.d ~/.emacs.d-Save
+  https://github.com/Barabash-ka/dot-emacs-d.git ~/.emacs.d
+#+END_SRC
+
+Copy boostrap file into initial init.el (to be overriden by the load process
+#+BEGIN_SRC sh :tangle no
+  cp boostrap.el init.el
+#+END_SRC 
+
+Run emacs and wait, first load will take few minutes.
+Restart emacs, this time it should take ~5 seconds.
+Enjoy :-)
 
 
-** Notes
+* Notes
+Tested on Windows 10 with Gitbash and emacs-27.1 and emacs 26.3
 
-** TODOs
+* TODOs
 - Find out how [[https://github.com/larstvei][larstvei]] achieved linking between README.org and init.org.
+- What's up with autosave messages
+- What's up with flycheck
+- Collect more gems from other's configs:
+  - [[https://github.com/larstvei/dot-emacs][larstvei]] 
+  - [[https://github.com/freetonik/emacs-dotfiles][freetonik]] 
+  - [[https://github.com/daviwil/emacs-from-scratch][daviwil]] 
