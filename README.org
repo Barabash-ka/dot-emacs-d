@@ -1,6 +1,19 @@
 * Emacs configuration directory
 
-All the details are in the configuration [[init.org][file]].
+Configuration and its documentation are in the configuration [[init.org][file]].
 
-** Notes 
+** Usage
+
+- clone the repository into ~/.emacs.d (save old config)
+- cd ~/.emacs.d
+- hide current version of bootstrap.el and init.el from ovewriting (copy to
+-hide)
+- run emacs and wait, first load will take long time (10 minutes)
+- restart emacs, this time it should take ~5 seconds
+- enjoy
+
+
+** Notes
+
+** TODOs
 - Find out how [[https://github.com/larstvei][larstvei]] achieved linking between README.org and init.org.
